@@ -9,11 +9,28 @@
     
 }
 
+#multiplayer {
+    border-left: solid #ff0000;
+    border-left-width: 5px;
+    float: right;
+    width: 317.5px;
+    height: 480px;
+    text-align: center;
+    font-size: 40px;
+}
+#singleplayer {
+    float: left;
+    width: 317.5px;
+    height: 480px;
+    text-align: center;
+    font-size: 40px;
+}
 #main {
     height: 480px;
     width: 640px;
     border: 1px solid black;
     position: absolute;
+    display: block;
 }
 
 #game {
@@ -24,6 +41,7 @@
 }
 
 #title {
+    cursor: pointer;
     font-size: 60px;
     text-align: center;
     position: relative;
