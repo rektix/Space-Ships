@@ -9,16 +9,38 @@
             <div id="intro">
                 <p id="title">Start Game!</p>
             </div>
-            <div id="game">
+            <div id="select">
                 <div id="singleplayer">
-                    <p>Single Player mode</p>
+                    <h4>Single Player mode</h4>
                     <p><button id="playSingle" type="button">Play</button></p>
+                    <p class="center">Player 1 controls</p>
+                    <div class="left">
+                        <p>A</p>
+                        <p>Move left</p>
+                    </div>
+                    <div class="right">
+                        <p>D</p>
+                        <p>Move right</p>
+                    </div>
                 </div>
                 <div id="multiplayer">
-                    <p>Multi Player mode</p>
+                    <h4>Multi Player mode</h4>
                     <p><button id="playMulti" type="button">Play</button></p>
+                    <p class="center">Player 2 controls</p>
+                    <div class="left">
+                        <p>&larr;</p>
+                        <p>Move left</p>
+                    </div>
+                    <div class="right">
+                        <p>&rarr;</p>
+                        <p>Move right</p>
+                    </div>
                 </div>
-            </div>    
+            </div>  
+            <div id="game">
+                <div id="p1" class="player"></div>
+                <div id="p2" class="player"></div>
+            </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script type="text/javascript" src="main.js"></script>
