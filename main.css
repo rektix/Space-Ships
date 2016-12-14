@@ -1,7 +1,6 @@
 .player {
     height: 20px;
     width: 20px; 
-    display: inline-block;
 }
 
 #multiplayer {
@@ -57,23 +56,21 @@
     width: 640px;
     display: none;
 }
-
+#p2 {
+    background-color: blue;
+    position: absolute;
+    left: 400px
+}
 #p1 {
     background-color: red;
+    position: absolute;
+}
+#playerPlace{
     position: relative;
     left: 320px;
     top: 384px;
     transform: translate(-50%);
 }
-
-#p2 {
-    background-color: blue;
-    position: relative;
-    left: 458px;
-    top: 384px;
-    transform: translate(-50%);
-}
-
 p {
     font-size: 20px;
 }
@@ -87,7 +84,6 @@ p {
 }
 .bullet1, .bullet2 {
     position: absolute;
-    display: inline-block;
     top: 384px;
     height: 20px;
     width: 5px;
