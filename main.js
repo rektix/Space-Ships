@@ -5,7 +5,7 @@ var p1 = $('#p1');
 var p2 = $('#p2');
 var mode, interval;
 var v1, v2;
-var x1 = 320, x2 = 458, y1 = '320px', y2 = '458px';
+var x1 = 320, x2 = 458, y1 = '320px', y2 = '458px', y3;
 var move1, move2, fire1, fire2;
 title.on('click', function(){
     $(this).hide();
@@ -115,19 +115,28 @@ interval = setInterval(function () {
         p2.css('left', y2);
     }
 }, 15);
-/*$(document).bind('keypress', function(e){    
+$(document).bind('keydown', function(e){    
     if (e.which === 32) {
         // space    
-        console.log(y1);
         fire1 = true;
-        $('#game').append("<div class='bullet1', style='left: "+y1+"'></div>");
+        $('#game').append("<div class='bullet1 bullet', style='left: "+y1+"'></div>");
+        $('.bullet1')
+                    .animate({top: 0}, 1500,"linear",function()
+                    {
+                        $(this).remove();
+                    })
     }
 });
-$(document).bind('keypress', function(e){ 
+$(document).bind('keydown', function(e){ 
     if (e.which === 16) {
         // shift
-        fire2 = true;
-        console.log(y2);
-        $('#game').append("<div class='bullet2', style='left: "+y2+"'></div>");
+        fire2 = true;        
+        y3 = x2 + 24 + 'px';
+        $('#game').append("<div class='bullet2 bullet', style='left: "+y3+"'></div>");
+        $('.bullet2')
+                    .animate({top: 0}, 1500,"linear",function()
+                    {
+                        $(this).remove();
+                    })
     }
-});*/
+});
