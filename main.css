@@ -92,4 +92,25 @@ p {
     height: 20px;
     width: 5px;
     background-color: black;
+    z-index: -1;
+}
+.enemy {
+    height: 20px;
+    width: 40px;
+    background-color: black;
+    float: left;
+    position: absolute;
+}
+#score1 {
+    position: absolute;
+    top: 400px;
+    left: 20px;
+    float: left;
+}
+#score2 {
+    position: absolute;
+    top: 400px;
+    left: 580px;
+    float: right;
+    display: none;
 }
